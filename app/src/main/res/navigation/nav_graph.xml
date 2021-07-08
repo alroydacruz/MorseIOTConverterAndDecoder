@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/morseLoginFragment">
+
+    <fragment
+        android:id="@+id/morseDecodeFragment"
+        android:name="com.alroy.morsecodedetector.ui.MorseDecodeFragment"
+        android:label="MorseDecodeFragment" >
+        <action
+            android:id="@+id/action_morseDecodeFragment_to_sendMorseToDeviceFragment"
+            app:destination="@id/sendMorseToDeviceFragment" />
+        <action
+            android:id="@+id/action_morseDecodeFragment_to_morseLoginFragment"
+            app:destination="@id/morseLoginFragment" />
+        <action
+            android:id="@+id/action_morseDecodeFragment_to_settingsBottomSheetFragment"
+            app:destination="@id/settingsBottomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendMorseToDeviceFragment"
+        android:name="com.alroy.morsecodedetector.ui.SendMorseToDeviceFragment"
+        android:label="SendMorseToDeviceFragment" />
+    <fragment
+        android:id="@+id/morseLoginFragment"
+        android:name="com.alroy.morsecodedetector.ui.AuthFragment"
+        android:label="MorseLoginFragment" >
+        <action
+            android:id="@+id/action_morseLoginFragment_to_morseDecodeFragment"
+            app:destination="@id/morseDecodeFragment"
+            app:popUpTo="@id/morseLoginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/settingsBottomSheetFragment"
+        android:name="com.alroy.morsecodedetector.ui.SettingsBottomSheetFragment"
+        android:label="SettingsBottomSheetFragment" />
+</navigation>

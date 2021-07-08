@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "437682251932",
+    "project_id": "morsecode-317712",
+    "storage_bucket": "morsecode-317712.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437682251932:android:1c1fa8706781bfb2dc6559",
+        "android_client_info": {
+          "package_name": "com.alroy.morsecodedetector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437682251932-sd6im44aja0gk9po853cdoj5er6fk6c4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alroy.morsecodedetector",
+            "certificate_hash": "d8b7af7ccd23aabb3c51b4155b1acf2a19b09f4a"
+          }
+        },
+        {
+          "client_id": "437682251932-h84gr0gvgqcmjmju4m7drlet1n6bmcr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRumypcShp4lnlL4ewy_a7At_Zha4u6n8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437682251932-h84gr0gvgqcmjmju4m7drlet1n6bmcr9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
