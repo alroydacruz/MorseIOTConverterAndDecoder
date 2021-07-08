@@ -10,6 +10,8 @@ def firestoreToRaspi(event, context):
     print(str(event))
 
     """send command to device"""
+    
+    
     print("Sending command to device")
     client = iot_v1.DeviceManagerClient()
     device_path = client.device_path('morsecode-317712','asia-east1','morse_code_registry','flashlight')
@@ -18,8 +20,6 @@ def firestoreToRaspi(event, context):
     messageState = event['value']['fields']['messageState']['integerValue']
     deviceId= event['value']['fields']['deviceId']['stringValue']
     
-    print("hi0")
-
     formattedValues = '{"currentMessage":"%s","messageState":"%s","deviceId":"%s"}' % (str(currentMessage), str(messageState), str(deviceId))
     data = formattedValues.encode("utf-8")
     
@@ -28,6 +28,6 @@ def firestoreToRaspi(event, context):
         request={"name": device_path, "binary_data":data}
     )
 
-    print("hi2")
+    
     """send command to device"""
     
